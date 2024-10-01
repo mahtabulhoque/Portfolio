@@ -71,6 +71,7 @@ const Skill: React.FC = () => {
       </div>
       
       
+      
     </div>
     
   );

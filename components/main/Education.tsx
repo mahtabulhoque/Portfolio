@@ -7,18 +7,18 @@ const Education = () => {
   const educations = [
     {
       imageUrl: '/school.jpg',
-      institute: 'Natmura Pukuria High School, Chittagong',
+      institute: 'Natmura Pukuria High School',
       duration: '2012-2017',
     },
     {
       imageUrl: '/collage.jpg',
-      institute: 'Islamia College, Chittagong',
+      institute: 'Islamia College',
       duration: '2017-2019',
     },
     {
       imageUrl: '/versity.jpg',
-      institute: 'University Of Chittagong, Chittagong',
-      duration: '2020-2025',
+      institute: 'University Of Chittagong',
+      duration: '2019-2025',
     },
   ];
 
@@ -30,7 +30,11 @@ const Education = () => {
           <div key={index} className="h-[20rem] relative flex items-center justify-center">
             <DirectionAwareHover imageUrl={education.imageUrl}>
               <div className="text-center text-white">
-                <h2 className="font-bold text-2xl">{education.institute}</h2>
+                <h2 className="font-bold text-2xl">Institution:
+                     <br />
+                      {education.institute},
+                      Chittagong
+                      </h2>
                 <p className="font-normal text-lg mt-2">{education.duration}</p>
               </div>
             </DirectionAwareHover>

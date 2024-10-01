@@ -1,50 +1,62 @@
 "use client";
-import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Link from "next/link";
-const Blogs = () => {
-    return (
-        <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
-            >
-              Make things float in air
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-            >
-              Hover over this card to unleash the power of CSS perspective
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-             
-              <h1>g</h1>
-            </CardItem>
-            <div className="flex justify-between items-center mt-20">
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="https://twitter.com/mannupaaji"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-              >
-                Try now →
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-              >
-                Sign up
-              </CardItem>
-            </div>
-          </CardBody>
-          
-        </CardContainer>
-      );
+import React, { useState, useEffect } from "react";
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+
+interface Blog {
+  id: number;
+  title: string;
+  description: string;
+}
+
+interface CardItem {
+  quote: string;
+  name: string;
+  title: string;
+}
+
+const Blogs: React.FC = () => {
+  const [blogData, setBlogData] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchBlogData = async () => {
+      try {
+        const response = await fetch("/blogs.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data: Blog[] = await response.json();
+        setBlogData(data);
+      } catch (err) {
+        if (err instanceof Error) {
+          setError(err.message);
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogData();
+  }, []);
+
+  if (loading) return <p>Loading blogs...</p>;
+  if (error) return <p>Error: {error}</p>;
+
+  const cardItems: CardItem[] = blogData.map((blog) => ({
+    quote: blog.description,
+    name: `Blog ${blog.id}`,
+    title: blog.title,
+  }));
+
+  return (
+    <div>
+      <h1 className="text-white text-5xl text-center font-bold mb-8 py-10">Blogs</h1>
+      <div className="h-[30rem] rounded-md flex flex-col antialiased bg- dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards items={cardItems} direction="right" speed="slow" />
+    </div>
+    </div>
+  );
 };
 
 export default Blogs;
