@@ -56,7 +56,7 @@ const Blogs: React.FC = () => {
       <h1 className="text-white text-2xl lg:text-5xl  text-center font-bold mb-8 py-10">
         Blogs
       </h1>
-      <div className="h-[30rem] rounded-md flex flex-col antialiased bg- dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="h-[30rem] rounded-md flex flex-col antialiased dark:bg-[#030014] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards items={cardItems} direction="right" speed="slow" />
         <ShootingStars />
         <StarsBackground />
