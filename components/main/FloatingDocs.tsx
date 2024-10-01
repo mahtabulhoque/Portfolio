@@ -2,6 +2,7 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
+  IconBrandDcos,
   IconBrandFacebook,
   IconBrandGithub,
   IconBrandLinkedin,
@@ -10,6 +11,13 @@ import {
 } from "@tabler/icons-react";
 const FloatingDocs = () => {
   const links = [
+    {
+      title: "My-Resume",
+      icon: (
+        <IconBrandDcos className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://drive.google.com/file/d/1-9VB4GtWLDBJ4nLVJ4fzwZGUz0rRfdlr/view?usp=drive_link",
+    },
     {
       title: "Home",
       icon: (
@@ -44,7 +52,7 @@ const FloatingDocs = () => {
         <IconBrandGithub className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://github.com/mahtabulhoque",
-    },
+    }
   ];
   return (
     <div className="flex items-center justify-center h-[15rem] w-full">

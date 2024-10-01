@@ -4,8 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-const Hero = () => {
-  const words = [
+// Define the type for each word in the Typewriter effect
+interface Word {
+  text: string;
+  className: string;
+}
+
+const Hero: React.FC = () => {
+  const words: Word[] = [
     {
       text: "Web-Developer,",
       className: "text-blue-500 dark:text-blue-500 text-xl",
@@ -39,9 +45,9 @@ const Hero = () => {
         <p className="text-sm lg:text-xl p-3 lg:p-0 max-w-md">
           a passionate web developer skilled in both front-end and back-end
           technologies. I have expertise in HTML, CSS, JavaScript, and popular
-          frameworks like React, Next.Js .I am a passionate specializing in
-          creating modern, responsive web applications. Explore my projects and
-          skills.
+          frameworks like React, Next.Js. I am a passionate developer
+          specializing in creating modern, responsive web applications. Explore
+          my projects and skills.
         </p>
       </motion.div>
 
