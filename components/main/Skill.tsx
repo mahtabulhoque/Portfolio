@@ -33,7 +33,7 @@ const skills: SkillItem[] = [
 
 const Skill: React.FC = () => {
   return (
-    <div className="max-w-[1440px] mx-auto text-white">
+    <div id="skills" className="max-w-[1440px] mx-auto text-white">
       {/* Skills Section */}
       <h2 className="text-center text-5xl font-bold mb-12">Skills</h2>
       {/* <Meteors number={3} /> */}

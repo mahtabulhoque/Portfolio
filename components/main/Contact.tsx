@@ -83,19 +83,22 @@ const Contact: React.FC = () => {
               Send Message
             </button>
           </form>
-          <div>
-            <FloatingDocs />
-          </div>
 
-          {/* Image beside the form */}
-          <div className="w-full md:w-1/2">
-            <Image
-              src={"/Email2.gif"}
-              alt="email"
-              width={700}
-              height={900}
-              className="rounded-full"
-            />
+          <div className="flex flex-col items-center">
+            <div>
+              <FloatingDocs />
+            </div>
+
+            {/* Image beside the form */}
+            <div className="w-full md:w-2/3">
+              <Image
+                src={"/Email2.gif"}
+                alt="email"
+                width={700}
+                height={900}
+                className="rounded-full"
+              />
+            </div>
           </div>
         </div>
       </div>
