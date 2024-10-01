@@ -55,7 +55,7 @@ const FloatingDocs = () => {
     }
   ];
   return (
-    <div className="flex items-center justify-center h-[15rem] w-full">
+    <div className="flex items-center justify-center h-[25rem] w-full">
       <FloatingDock mobileClassName="translate-y-5" items={links} />
     </div>
   );

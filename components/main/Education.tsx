@@ -24,7 +24,7 @@ const Education = () => {
 
   return (
     <div id="educations" className="my-10">
-      <h1 className="text-white text-5xl text-center font-bold mb-8 py-10">
+      <h1 className="text-white text-2xl lg:text-5xl text-center font-bold mb-8 py-10">
         Education
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

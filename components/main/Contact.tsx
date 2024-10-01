@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import FloatingDocs from "./FloatingDocs";
+import Swal from "sweetalert2"; // Import SweetAlert
 
 const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
@@ -11,6 +12,16 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({ name, email, message });
+
+    // Show SweetAlert on successful form submission
+    Swal.fire({
+      title: "Message Sent!",
+      text: "Thank you for reaching out, I will get back to you soon.",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+
+    // Clear form fields
     setName("");
     setEmail("");
     setMessage("");
@@ -18,7 +29,7 @@ const Contact: React.FC = () => {
 
   return (
     <div id="contact" className="py-10">
-      <h1 className="text-white text-5xl text-center font-bold mb-8">
+      <h1 className="text-white text-2xl lg:text-5xl text-center font-bold mb-8">
         Reach me out
       </h1>
       <div className="container mx-auto px-4">

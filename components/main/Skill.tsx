@@ -35,9 +35,9 @@ const Skill: React.FC = () => {
   return (
     <div id="skills" className="max-w-[1440px] mx-auto text-white">
       {/* Skills Section */}
-      <h2 className="text-center text-5xl font-bold mb-12">Skills</h2>
+      <h2 className="text-center text-2xl lg:text-5xl font-bold mb-12">Skills</h2>
       {/* <Meteors number={3} /> */}
-      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
         {skills.map((skill, index) => (
           <motion.div
             key={index}

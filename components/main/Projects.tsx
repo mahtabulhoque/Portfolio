@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects" className="">
-      <h2 className="text-5xl font-bold text-center text-white mb-8 my-10">
+      <h2 className="text-2xl lg:text-5xl font-bold text-center text-white mb-8 my-10">
         My Recent Projects
       </h2>
 
@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
                   target="_blank"
                   className="px-4 py-2 rounded-xl text-[15px] font-normal dark:text-white"
                 >
-                  Live Demo →
+                  Live Link →
                 </CardItem>
                 <CardItem
                   translateZ={20}

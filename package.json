@@ -16,6 +16,7 @@
     "react-scroll": "^1.9.0",
     "react-typewriter-effect": "^1.1.0",
     "simplex-noise": "^4.0.3",
+    "sweetalert2": "^11.14.1",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
