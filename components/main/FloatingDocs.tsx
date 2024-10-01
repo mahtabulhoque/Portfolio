@@ -36,7 +36,7 @@ const FloatingDocs = () => {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/7Mahach5?t=2r1b2G8w5XxfDpWPzU05qQ&s=09",
+      href: "https://x.com/7Mahach5",
     },
     {
       title: "GitHub",
