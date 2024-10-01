@@ -52,7 +52,7 @@ const Blogs: React.FC = () => {
   }));
 
   return (
-    <div>
+    <div id="blogs">
       <h1 className="text-white text-5xl text-center font-bold mb-8 py-10">
         Blogs
       </h1>

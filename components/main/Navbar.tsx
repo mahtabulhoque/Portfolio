@@ -3,7 +3,7 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 const links = [
-  { name: "About", target: "about" },
+  { name: "About", target: "/" },
   { name: "Skills", target: "skills" },
   { name: "Projects", target: "projects" },
   { name: "Educations", target: "educations" },

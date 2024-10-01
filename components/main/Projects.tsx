@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <div id="projects" className="">
       <h2 className="text-5xl font-bold text-center text-white mb-8 my-10">
         My Recent Projects
       </h2>

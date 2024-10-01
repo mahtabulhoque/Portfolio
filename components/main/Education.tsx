@@ -23,7 +23,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="my-10">
+    <div id="educations" className="my-10">
       <h1 className="text-white text-5xl text-center font-bold mb-8 py-10">
         Education
       </h1>
