@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div id="contacts" className="py-10">
+    <div id="contact" className="py-10">
       <h1 className="text-white text-5xl text-center font-bold mb-8">
         Reach me out
       </h1>

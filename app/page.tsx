@@ -11,7 +11,7 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <main className="w-full h-full">
+    <main id="/" className="w-full h-full">
       <Hero />
 
       <Skill />
