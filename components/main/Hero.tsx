@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Welcome to My Portfolio
         </h1>
-        <p className="text-sm lg:text-2xl p-3 lg:p-0 max-w-md font-bold">
+        <p className="text-lg lg:text-2xl p-3 lg:p-0 max-w-md font-bold">
        Hey, I am Mahtabul Hoque Chowdhury,
         </p>
         <TypewriterEffectSmooth words={words} />

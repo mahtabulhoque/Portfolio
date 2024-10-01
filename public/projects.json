@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Job Management System",
+      "live_link": "https://job-management-live.com",
+      "github_link": "https://github.com/username/job-management"
+    },
+    {
+      "id": 2,
+      "name": "Art & Craft Showcase",
+      "live_link": "https://art-craft-showcase.com",
+      "github_link": "https://github.com/username/art-craft-showcase"
+    },
+    {
+      "id": 3,
+      "name": "Mobile Financial Service",
+      "live_link": "https://mfs-dashboard.com",
+      "github_link": "https://github.com/username/mfs-dashboard"
+    },
+    {
+      "id": 4,
+      "name": "Survey Application",
+      "live_link": "https://survey-app.com",
+      "github_link": "https://github.com/username/survey-application"
+    },
+    {
+      "id": 5,
+      "name": "E-commerce Filtering System",
+      "live_link": "https://ecommerce-filter.com",
+      "github_link": "https://github.com/username/ecommerce-filter"
+    },
+    {
+      "id": 6,
+      "name": "Education History Component",
+      "live_link": "https://edu-history-component.com",
+      "github_link": "https://github.com/username/education-history"
+    }
+  ]
+  
