@@ -41,7 +41,7 @@ const FloatingDocs = () => {
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full bg-white text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://github.com/mahtabulhoque",
     },
