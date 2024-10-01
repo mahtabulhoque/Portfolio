@@ -33,15 +33,15 @@ const Hero = () => {
           Welcome to My Portfolio
         </h1>
         <p className="text-lg lg:text-2xl p-3 lg:p-0 max-w-md font-bold">
-       Hey, I am Mahtabul Hoque Chowdhury,
+          Hey, I am Mahtabul Hoque Chowdhury,
         </p>
         <TypewriterEffectSmooth words={words} />
         <p className="text-sm lg:text-xl p-3 lg:p-0 max-w-md">
-          a passionate web developer skilled in
-          both front-end and back-end technologies. I have expertise in HTML,
-          CSS, JavaScript, and popular frameworks like React, Next.Js .I am a
-          passionate specializing in creating modern, responsive web
-          applications. Explore my projects and skills.
+          a passionate web developer skilled in both front-end and back-end
+          technologies. I have expertise in HTML, CSS, JavaScript, and popular
+          frameworks like React, Next.Js .I am a passionate specializing in
+          creating modern, responsive web applications. Explore my projects and
+          skills.
         </p>
       </motion.div>
 

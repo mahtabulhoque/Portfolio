@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { ShootingStars } from "../ui/shooting-stars";
+import { StarsBackground } from "../ui/stars-background";
 
 interface Blog {
   id: number;
@@ -51,10 +53,14 @@ const Blogs: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-white text-5xl text-center font-bold mb-8 py-10">Blogs</h1>
+      <h1 className="text-white text-5xl text-center font-bold mb-8 py-10">
+        Blogs
+      </h1>
       <div className="h-[30rem] rounded-md flex flex-col antialiased bg- dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards items={cardItems} direction="right" speed="slow" />
-    </div>
+        <InfiniteMovingCards items={cardItems} direction="right" speed="slow" />
+        <ShootingStars />
+        <StarsBackground />
+      </div>
     </div>
   );
 };

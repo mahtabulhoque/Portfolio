@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -45,13 +45,12 @@ const Skill: React.FC = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 0.6,         
-              ease: "easeInOut",      
-              delay: index * 0.1,   
+              duration: 0.6,
+              ease: "easeInOut",
+              delay: index * 0.1,
             }}
-            viewport={{ once: false, amount: 0.5 }}  
+            viewport={{ once: false, amount: 0.5 }}
           >
-          
             <div className="w-20 h-20 flex items-center justify-center mb-2">
               <Image
                 src={skill.src}
@@ -61,19 +60,12 @@ const Skill: React.FC = () => {
                 priority={true}
               />
             </div>
-            
+
             <span className="text-sm md:text-md">{skill.name}</span>
-            
-            
           </motion.div>
-          
         ))}
       </div>
-      
-      
-      
     </div>
-    
   );
 };
 
