@@ -1,10 +1,16 @@
 "use client";
 
 import React from "react";
-import { DirectionAwareHover } from "../ui/direction-aware-hover";
+import Image from "next/image";
 
-const Education = () => {
-  const educations = [
+interface EducationProps {
+  imageUrl: string;
+  institute: string;
+  duration: string;
+}
+
+const Education: React.FC = () => {
+  const educations: EducationProps[] = [
     {
       imageUrl: "/school.jpg",
       institute: "Natmura Pukuria High School",
@@ -23,28 +29,35 @@ const Education = () => {
   ];
 
   return (
-    <div id="educations" className="my-10">
+    <div id="educations" className="my-10 max-w-[1440px] mx-auto">
       <h1 className="text-white text-2xl lg:text-5xl text-center font-bold mb-8 py-10">
         Education
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
         {educations.map((education, index) => (
           <div
             key={index}
-            className="h-[20rem] relative flex items-center justify-center"
+            className="relative h-[20rem] flex items-center justify-center transform transition duration-500 hover:scale-105"
           >
-            <DirectionAwareHover imageUrl={education.imageUrl}>
-              <div className="text-center text-white">
-                <h2 className="font-bold text-2xl">
-                  Institution:
-                  <br />
-                  {education.institute}, Chittagong
-                </h2>
-                <p className="font-normal text-lg mt-2">{education.duration}</p>
+            <div className="glass-card text-center text-white p-8 rounded-xl backdrop-blur-lg bg-white/10 shadow-lg border border-white/20 w-full h-full flex flex-col justify-center">
+              <div className="relative w-full h-40 mb-4">
+                <Image
+                  src={education.imageUrl}
+                  alt={education.institute}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-md"
+                />
               </div>
-            </DirectionAwareHover>
+              <h2 className="font-bold text-2xl">
+                {education.institute}, Chittagong
+              </h2>
+              <p className="font-normal text-lg mt-2">{education.duration}</p>
+              
+            </div>
           </div>
         ))}
+        
       </div>
     </div>
   );

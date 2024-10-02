@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
     <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 my-32 lg:my-40">
       {/* Text Section */}
       <motion.div
-        className="text-center md:text-left mt-6 md:mt-0"
+        className="text-center md:text-left text-gray-200 mt-6 md:mt-0"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
         <p className="text-lg lg:text-2xl p-3 lg:p-0 max-w-md font-bold">
           Hey, I am Mahtabul Hoque Chowdhury,
         </p>
-        <TypewriterEffectSmooth words={words} />
+        <TypewriterEffectSmooth words={words}/>
         <p className="text-sm lg:text-xl p-3 lg:p-0 max-w-md">
           a passionate web developer skilled in both front-end and back-end
           technologies. I have expertise in HTML, CSS, JavaScript, and popular

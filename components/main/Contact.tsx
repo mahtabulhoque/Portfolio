@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import FloatingDocs from "./FloatingDocs";
-import Swal from "sweetalert2"; // Import SweetAlert
+import Swal from "sweetalert2"; 
 
 const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
@@ -32,6 +32,7 @@ const Contact: React.FC = () => {
       <h1 className="text-white text-2xl lg:text-5xl text-center font-bold mb-8">
         Reach me out
       </h1>
+      
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-5">
           {/* Contact Form */}
