@@ -42,15 +42,15 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div id="projects" className="my-16">
-      <h2 className="text-2xl lg:text-4xl font-bold text-center text-white mb-8 ">
+    <div id="projects" className="">
+      <h2 className="text-2xl lg:text-5xl font-bold text-center text-white mb-8 my-10">
         My Recent Projects
       </h2>
 
-      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {projects.map((project) => (
           <CardContainer key={project.id} className="inter-var">
-            <CardBody className="bg-[#030015] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] rounded-xl p-4 border h-auto">
+            <CardBody className="bg-[#030014] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
                 className="text-xl font-bold text-white"

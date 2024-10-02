@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -50,7 +48,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-5 flex items-center justify-center",
+          "py-2 flex items-center justify-center",
           containerClassName
         )}
         style={{
