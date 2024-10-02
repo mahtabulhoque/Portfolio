@@ -1,6 +1,7 @@
 import Blogs from "@/components/main/Blogs";
 import Contact from "@/components/main/Contact";
 import Education from "@/components/main/Education";
+import FloatingDocs from "@/components/main/FloatingDocs";
 import Footer from "@/components/main/Footer";
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
@@ -24,21 +25,17 @@ const Homepage = () => {
         />
       </div>
       <Hero />
-      
-
       <Skill />
-
       <div className="max-w-[1440px] mx-auto">
         <Projects />
       </div>
-
       <Education />
       <Blogs />
       <Contact />
+      <FloatingDocs />
       <div>
         <Footer />
       </div>
-
       <ShootingStars />
     </main>
   );

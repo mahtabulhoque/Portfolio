@@ -53,7 +53,7 @@ const Blogs: React.FC = () => {
 
   return (
     <div id="blogs">
-      <h1 className="text-white text-2xl lg:text-5xl  text-center font-bold mb-8 py-10">
+      <h1 className="text-white text-2xl lg:text-4xl  text-center font-bold mb-8 py-10">
         Blogs
       </h1>
       <div className="h-[30rem] rounded-md flex flex-col antialiased dark:bg-[#030014] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">

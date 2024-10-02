@@ -29,13 +29,14 @@ const skills: SkillItem[] = [
   { name: "Stripe", src: "/stripe.webp" },
   { name: "Vercel", src: "/Vercel.png" },
   { name: "MongoDB", src: "/mongodb.png" },
+  { name: "Node.Js", src: "/node.png" },
 ];
 
 const Skill: React.FC = () => {
   return (
     <div id="skills" className="max-w-[1440px] mx-auto text-white">
       {/* Skills Section */}
-      <h2 className="text-center text-2xl lg:text-5xl font-bold mb-12">Skills</h2>
+      <h2 className="text-center text-2xl lg:text-4xl font-bold mb-12">Skills</h2>
       {/* <Meteors number={3} /> */}
       <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
         {skills.map((skill, index) => (
