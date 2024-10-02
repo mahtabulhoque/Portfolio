@@ -20,14 +20,14 @@ const skills: SkillItem[] = [
   { name: "MUI", src: "/mui.png" },
   { name: "Tailwind CSS", src: "/tailwind.png" },
   { name: "Next.js", src: "/next1.png" },
-  { name: "Framer Motion", src: "/Framer.png" },
+  { name: "Framer Motion", src: "/framer.png" },
   { name: "TypeScript", src: "/ts.png" },
   { name: "Node.js", src: "/nodes.png" },
   { name: "Express.js", src: "/express.png" },
   { name: "Firebase", src: "/Firebase.png" },
   { name: "GitHub", src: "/gitwhite.png" },
   { name: "Stripe", src: "/stripe.webp" },
-  { name: "Vercel", src: "/vercel.png" },
+  { name: "Vercel", src: "/Vercel.png" },
   { name: "MongoDB", src: "/mongodb.png" },
 ];
 
