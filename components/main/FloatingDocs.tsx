@@ -6,11 +6,20 @@ import {
   IconBrandFacebook,
   IconBrandGithub,
   IconBrandLinkedin,
+  IconBrandMailgun,
   IconBrandX,
   IconHome,
+  
 } from "@tabler/icons-react";
 const FloatingDocs = () => {
   const links = [
+    {
+      title: "Home",
+      icon: (
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
     {
       title: "My-Resume",
       icon: (
@@ -19,12 +28,13 @@ const FloatingDocs = () => {
       href: "https://drive.google.com/file/d/1-9VB4GtWLDBJ4nLVJ4fzwZGUz0rRfdlr/view?usp=drive_link",
     },
     {
-      title: "Home",
+      title: "Email to Me",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandMailgun className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href:"mailto:mahach0396@gmail.com",
     },
+   
     {
       title: "Facebook",
       icon: (
