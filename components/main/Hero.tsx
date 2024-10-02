@@ -14,15 +14,15 @@ const Hero: React.FC = () => {
   const words: Word[] = [
     {
       text: "Web-Developer,",
-      className: "text-blue-500 dark:text-blue-500 text-xl",
+      className: "text-blue-500 dark:text-blue-500 text-md lg:text-xl ",
     },
     {
       text: "Tech-Learner,",
-      className: "text-white dark:text-gray-500 text-xl",
+      className: "text-white dark:text-gray-500 text-md lg:text-xl ",
     },
     {
       text: "Writer,",
-      className: "text-white dark:text-gray-500 text-xl",
+      className: "text-white dark:text-gray-500 text-md lg:text-xl ",
     },
   ];
 
