@@ -33,7 +33,7 @@ const Education: React.FC = () => {
       <h1 className="text-white text-2xl lg:text-5xl text-center font-bold mb-8 py-10">
         Education
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10 lg:p-0">
         {educations.map((education, index) => (
           <div
             key={index}
