@@ -29,7 +29,6 @@ const skills: SkillItem[] = [
   { name: "Stripe", src: "/stripe.webp" },
   { name: "Vercel", src: "/Vercel.png" },
   { name: "MongoDB", src: "/mongodb.png" },
-  { name: "Node.Js", src: "/node.png" },
 ];
 
 const Skill: React.FC = () => {

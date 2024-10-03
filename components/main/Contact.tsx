@@ -6,7 +6,6 @@ const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({ name, email, message });
@@ -32,8 +31,10 @@ const Contact: React.FC = () => {
       </h1>
 
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-center
-        gap-10 items-center md:space-y-0 md:space-x-5">
+        <div
+          className="flex flex-col md:flex-row justify-center
+        gap-10 items-center md:space-y-0 md:space-x-5"
+        >
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
@@ -96,15 +97,14 @@ const Contact: React.FC = () => {
           </form>
 
           {/* Image beside the form */}
-        
-            <Image
-              src={"/msg.gif"}
-              alt="email"
-              width={300}
-              height={300}
-              className="rounded-3xl w-ull"
-            />
-         
+
+          <Image
+            src={"/msg.gif"}
+            alt="email"
+            width={300}
+            height={300}
+            className="rounded-3xl w-ull"
+          />
         </div>
       </div>
     </div>
