@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-// Define the type for each word in the Typewriter effect
 interface Word {
   text: string;
   className: string;
@@ -27,7 +26,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 my-32 lg:my-40">
+    <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r from-gray-900 to-cyan-800 text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 my-32 lg:my-40">
       {/* Text Section */}
       <motion.div
         className="text-center md:text-left text-gray-200 mt-6 md:mt-0"
@@ -42,7 +41,7 @@ const Hero: React.FC = () => {
           Hey, I am Mahtabul Hoque Chowdhury,
         </p>
         <TypewriterEffectSmooth words={words}/>
-        <p className="text-sm lg:text-xl p-3 lg:p-0 max-w-md">
+        <p className="text-lg lg:text-xl p-3 lg:p-0 max-w-md">
           a passionate web developer skilled in both front-end and back-end
           technologies. I have expertise in HTML, CSS, JavaScript, and popular
           frameworks like React, Next.Js. I am a passionate developer
