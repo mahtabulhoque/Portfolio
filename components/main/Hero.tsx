@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r from-gray-900 to-cyan-800 text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 my-32 lg:my-40">
+    <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r from-gray-900 to-purple-900 text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 my-32 lg:my-40">
       {/* Text Section */}
       <motion.div
         className="text-center md:text-left text-gray-200 mt-6 md:mt-0"
