@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "name": "QuizPulse",
+    "live_link": "https://quizpluse.vercel.app/",
+    "github_link": "https://github.com/mdmarufhossianbd/quizpluse",
+    "image": "/quizPulse.png",
+    "description": "Overview: We Developed a dynamic quiz application enabling users to create Quizzes, take quizzes, track progress, and earn rewards, with secure authentication and interactive UI. Key Features: Live Scoreboard, Timed Challenges, Progress Tracking, Custom Quizzes, Daily Streaks and Rewards, Skip Question, Emailing, User Level, Winning Award & Certification, Payment. Technologies: Next.js, Next Auth, MongoDB, Cloudinary, Framer Motion, Swiper.js, Shadcn, Tailwind CSS etc. "
+  },
+  {
+    "id": 2,
     "name": "Pro Survey",
     "live_link": "https://b9a12-assignment-project.web.app/",
     "github_link": "https://github.com/mahtabulhoque/B9A12-Pro-Client-Site",
@@ -8,7 +16,7 @@
     "description": "Pro Survey is a powerful survey tool that allows Surveyor to create surveys and admins to distribute surveys easily. Users can participate in surveys, and there is a payment system in place. Pro users can access hidden benefits. Built with React, Tailwind CSS, Framer Motion, Daisy UI, MongoDB, CRUD operations, React Icons, Firebase, Stripe for payments, and GitHub."
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "JobQuestHub",
     "live_link": "https://b9a11-assignment-748f9.web.app/",
     "github_link": "https://github.com/mahtabulhoque/B9A11-Pro-Client-Site",
@@ -16,7 +24,7 @@
     "description": "JobQuestHub is an innovative platform connecting job seekers with employers seamlessly. Built using React, Node.js, MongoDB, JWT, Framer Motion, Firebase, Daisy UI, Tailwind CSS, and more."
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Eco Artisan",
     "live_link": "https://b9a10-assignment-ccb90.web.app/",
     "github_link": "https://github.com/username/art-craft-showcase",

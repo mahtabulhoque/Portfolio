@@ -26,6 +26,7 @@ const Homepage = () => {
       </div>
       <Hero />
       <Skill />
+      
       <div className="max-w-[1440px] mx-auto">
         <Projects />
       </div>

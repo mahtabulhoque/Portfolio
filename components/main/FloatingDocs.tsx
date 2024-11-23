@@ -25,7 +25,7 @@ const FloatingDocs = () => {
       icon: (
         <IconBrandDcos className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
-      href:'https://drive.google.com/file/d/1nzA0z23oLbxav6d6lSt042MINQVs5VyU/view?usp=sharing',
+      href:'https://drive.google.com/file/d/1tkQk1dnfklQAvUebO1W2XNMMvNUCFCoy/view?usp=drive_link',
     },
     {
       title: "Email to Me",
