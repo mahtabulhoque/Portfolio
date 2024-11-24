@@ -42,11 +42,11 @@ const Hero: React.FC = () => {
         </p>
         <TypewriterEffectSmooth words={words}/>
         <p className="text-lg lg:text-xl p-3 lg:p-0 max-w-md">
-          a passionate web developer skilled in both front-end and back-end
-          technologies. I have expertise in HTML, CSS, JavaScript, and popular
-          frameworks like React, Next.Js. I am a passionate developer
-          specializing in creating modern, responsive web applications. Explore
-          my projects and skills.
+        Frontend-focused developer with expertise in the MERN stack, specializing in JavaScript, React.js, Next.js, Node.js, and
+        MongoDB. Experienced in creating user-centric web applications and collaborating with cross-functional teams.
+        Passionate about leveraging innovative technologies to deliver exceptional user experiences and drive business success. I am a passionate developer
+        specializing in creating modern, responsive web applications. Explore
+        my projects and skills.
         </p>
       </motion.div>
 
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
           alt="Profile"
           width={500}
           height={800}
-          className="rounded-lg shadow-md"
+          className="rounded-lg shadow-sm object-cover"
         />
       </motion.div>
     </div>
