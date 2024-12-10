@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
     <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 lg:my-40">
       {/* Text Section */}
       <motion.div
-        className="text-center md:text-left text-gray-200 mt-6 md:mt-0"
+        className="md:text-left text-gray-200 mt-6 md:mt-0"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
