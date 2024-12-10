@@ -43,11 +43,11 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects" className="">
-      <h2 className="text-2xl lg:text-4xl font-bold text-center text-white mb-8 my-10">
+      <h2 className="text-2xl lg:text-4xl font-bold text-center text-white mb-8 my-20">
         My Recent Projects
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 py-10">
         {projects.map((project) => (
           <CardContainer key={project.id} className="inter-var">
             <CardBody className="bg-[#030014] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[#030014] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">

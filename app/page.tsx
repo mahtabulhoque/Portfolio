@@ -24,7 +24,8 @@ const Homepage = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <Hero />
+      <Hero/>
+      <FloatingDocs />
       <Skill />
       
       <div className="max-w-[1440px] mx-auto">
@@ -33,7 +34,7 @@ const Homepage = () => {
       <Education />
       <Blogs />
       <Contact />
-      <FloatingDocs />
+      
       <div>
         <Footer />
       </div>
