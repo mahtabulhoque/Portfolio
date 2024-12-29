@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee"; // Import Marquee
 
 interface SkillItem {
   name: string;
@@ -32,29 +32,15 @@ const skills: SkillItem[] = [
 ];
 
 const Skill: React.FC = () => {
-  const [isPaused, setIsPaused] = useState(false);
-
   return (
-    <div
-      id="skills"
-      className="max-w-[1440px] mx-auto text-white overflow-hidden"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
+    <div id="skills" className="max-w-[1440px] mx-auto text-white overflow-hidden">
       {/* Skills Section */}
       <h2 className="text-center text-2xl lg:text-4xl font-bold mb-12">Skills</h2>
 
       {/* Marquee */}
-      <motion.div
-        className="flex w-full whitespace-nowrap items-center"
-        animate={{ x: isPaused ? 0 : "-100%" }}
-        transition={{ duration: 20, ease: "linear", repeat: Infinity }}
-      >
+      <Marquee gradient={false} speed={25}>
         {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center mx-8"
-          >
+          <div key={index} className="flex flex-col items-center mx-8">
             <div className="w-20 h-20 flex items-center justify-center mb-2">
               <Image
                 src={skill.src}
@@ -67,7 +53,7 @@ const Skill: React.FC = () => {
             <span className="text-sm md:text-md text-center">{skill.name}</span>
           </div>
         ))}
-      </motion.div>
+      </Marquee>
     </div>
   );
 };
