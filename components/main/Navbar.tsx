@@ -6,7 +6,7 @@ const links = [
   { name: "About", target: "/" },
   { name: "Skills", target: "skills" },
   { name: "Projects", target: "projects" },
-  { name: "Blogs", target: "blogs" },
+  // { name: "Blogs", target: "blogs" },
   { name: "Contact", target: "contact" },
 ];
 
