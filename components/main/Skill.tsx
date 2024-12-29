@@ -41,7 +41,7 @@ const Skill: React.FC = () => {
       <Marquee gradient={false} speed={25}>
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center mx-8">
-            <div className="w-20 h-20 flex items-center justify-center mb-2">
+            <div className="w-20 h-20 flex items-center justify-center mb-2 p-4">
               <Image
                 src={skill.src}
                 alt={skill.name}
