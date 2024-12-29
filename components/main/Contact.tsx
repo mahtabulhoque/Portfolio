@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
 
           <div className="flex justify-center items-center mt-4">
         <a
-          href="https://wa.me/01882833403"
+          href="https://wa.me/+8801882833403"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-green-500 hover:text-green-700 transition duration-300"
