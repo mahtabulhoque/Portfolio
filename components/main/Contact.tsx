@@ -1,11 +1,15 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
+
+
 const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({ name, email, message });
@@ -25,7 +29,14 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div id="contact" className="max-w-[1440px] mx-auto py-10">
+    <motion.div
+      id="contact"
+      className="max-w-[1440px] mx-auto py-10"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: false }}
+    >
       <h1 className="text-white text-2xl lg:text-4xl text-center font-bold mb-8">
         Reach me out
       </h1>
@@ -96,18 +107,31 @@ const Contact: React.FC = () => {
             </button>
           </form>
 
+          <div className="flex justify-center items-center mt-4">
+        <a
+          href="https://wa.me/01882833403"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-green-500 hover:text-green-700 transition duration-300"
+        >
+          <FaWhatsapp size={60} />
+          <span>Chat with me on WhatsApp</span>
+        </a>
+      </div>
+
           {/* Image beside the form */}
 
-          <Image
+          {/* <Image
             src={"/msg.gif"}
             alt="email"
             width={300}
             height={300}
             className="rounded-3xl w-ull"
-          />
+          /> */}
         </div>
       </div>
-    </div>
+    </motion.div>
+    
   );
 };
 

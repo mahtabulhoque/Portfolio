@@ -1,4 +1,4 @@
-import Blogs from "@/components/main/Blogs";
+// import Blogs from "@/components/main/Blogs";
 import Contact from "@/components/main/Contact";
 import Education from "@/components/main/Education";
 import FloatingDocs from "@/components/main/FloatingDocs";
@@ -25,20 +25,25 @@ const Homepage = () => {
         />
       </div>
       <Hero/>
+
+      <div className="py-10">
       <FloatingDocs />
+      </div>
+      
       <Skill />
       
       <div className="max-w-[1440px] mx-auto">
         <Projects />
       </div>
       <Education />
-      <Blogs />
+      {/* <Blogs /> */}
       <Contact />
       
       <div>
         <Footer />
       </div>
       <ShootingStars />
+      
     </main>
   );
 };

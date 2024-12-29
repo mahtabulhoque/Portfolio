@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -32,24 +32,28 @@ const skills: SkillItem[] = [
 ];
 
 const Skill: React.FC = () => {
+  const [isPaused, setIsPaused] = useState(false);
+
   return (
-    <div id="skills" className="max-w-[1440px] mx-auto text-white">
+    <div
+      id="skills"
+      className="max-w-[1440px] mx-auto text-white overflow-hidden"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       {/* Skills Section */}
       <h2 className="text-center text-2xl lg:text-4xl font-bold mb-12">Skills</h2>
-      {/* <Meteors number={3} /> */}
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
+
+      {/* Marquee */}
+      <motion.div
+        className="flex w-full whitespace-nowrap items-center"
+        animate={{ x: isPaused ? 0 : "-100%" }}
+        transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+      >
         {skills.map((skill, index) => (
-          <motion.div
+          <div
             key={index}
-            className="flex flex-col items-center"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 0.6,
-              ease: "easeInOut",
-              delay: index * 0.1,
-            }}
-            viewport={{ once: false, amount: 0.5 }}
+            className="flex flex-col items-center mx-8"
           >
             <div className="w-20 h-20 flex items-center justify-center mb-2">
               <Image
@@ -60,11 +64,10 @@ const Skill: React.FC = () => {
                 priority={true}
               />
             </div>
-
-            <span className="text-sm md:text-md">{skill.name}</span>
-          </motion.div>
+            <span className="text-sm md:text-md text-center">{skill.name}</span>
+          </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

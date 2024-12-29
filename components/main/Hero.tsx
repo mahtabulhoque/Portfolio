@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r text-white p-10 rounded-lg shadow-lg mx-4 md:mx-10 lg:my-40">
+    <div className="flex flex-col-reverse md:flex-row justify-between items-center bg-gradient-to-r text-white md:p-0 lg:p-12 rounded-lg shadow-lg mx-4 md:mx-10 lg:my-40">
       {/* Text Section */}
       <motion.div
         className="md:text-left text-gray-200 mt-6 md:mt-0"
@@ -34,14 +34,14 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 px-3 lg:px-0">
           Welcome to My Portfolio
         </h1>
-        <p className="text-lg lg:text-2xl p-3 lg:p-0 max-w-md font-bold">
+        <p className="text-lg lg:text-2xl px-3 font-bold">
           Hey, I am Mahtabul Hoque Chowdhury,
         </p>
-        <TypewriterEffectSmooth words={words}/>
-        <p className="text-lg lg:text-xl p-3 lg:p-0 max-w-md">
+        <TypewriterEffectSmooth className="px-2" words={words}/>
+        <p className="text-lg lg:text-xl px-3 lg:p-0 max-w-2xl">
         Frontend-focused developer with expertise in the MERN stack, specializing in JavaScript, React.js, Next.js, Node.js, and
         MongoDB. Experienced in creating user-centric web applications and collaborating with cross-functional teams.
         Passionate about leveraging innovative technologies to deliver exceptional user experiences and drive business success. I am a passionate developer

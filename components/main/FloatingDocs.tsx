@@ -9,8 +9,8 @@ import {
   IconBrandMailgun,
   IconBrandX,
   IconHome,
-  
 } from "@tabler/icons-react";
+
 const FloatingDocs = () => {
   const links = [
     {
@@ -25,16 +25,15 @@ const FloatingDocs = () => {
       icon: (
         <IconBrandDcos className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
-      href:'https://drive.google.com/file/d/1tkQk1dnfklQAvUebO1W2XNMMvNUCFCoy/view?usp=drive_link',
+      href: "https://drive.google.com/file/d/1tkQk1dnfklQAvUebO1W2XNMMvNUCFCoy/view?usp=drive_link",
     },
     {
       title: "Email to Me",
       icon: (
         <IconBrandMailgun className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
-      href:"mailto:mahach0396@gmail.com",
+      href: "mailto:mahach0396@gmail.com",
     },
-   
     {
       title: "Facebook",
       icon: (
@@ -62,11 +61,14 @@ const FloatingDocs = () => {
         <IconBrandGithub className="h-full w-full  text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://github.com/mahtabulhoque",
-    }
+    },
   ];
+
   return (
-    <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center h-[5rem] mb-20 w-full">
-      <FloatingDock mobileClassName="translate-y-5" items={links} />
+    <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center h-[5rem] mb-20 w-full md:static md:mb-0">
+      <div className="bottom-20 w-full md:w-auto">
+        <FloatingDock mobileClassName="translate-y-5" items={links} />
+      </div>
     </div>
   );
 };
