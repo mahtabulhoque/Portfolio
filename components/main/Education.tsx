@@ -39,14 +39,14 @@ const Education: React.FC = () => {
             key={index}
             className="relative h-[20rem] flex items-center justify-center transform transition duration-500 hover:scale-105"
           >
-            <div className="glass-card text-center text-white p-8 rounded-xl backdrop-blur-lg bg-white/10 shadow-lg border border-white/20 w-full h-full flex flex-col justify-center">
+            <div className="glass-card text-center text-white p-8 rounded-2xl backdrop-blur-lg bg-white/10 shadow-lg border border-white/20 w-full h-full flex flex-col justify-center">
               <div className="relative w-full h-40 mb-4">
                 <Image
                   src={education.imageUrl}
                   alt={education.institute}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-md"
+                  className="rounded-xl"
                 />
               </div>
               <h2 className="font-bold text-2xl">

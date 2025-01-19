@@ -49,14 +49,14 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="backdrop-filter backdrop-blur-lg bg-white/10 p-6 rounded-lg shadow-md w-full md:w-1/2 border border-white/20"
+            className="backdrop-filter backdrop-blur-lg bg-white/10 p-6 rounded-2xl shadow-md w-full md:w-1/2 border border-white/20"
           >
             <div className="mb-4">
               <label className="block text-white font-bold mb-2" htmlFor="name">
                 Name
               </label>
               <input
-                className="w-full px-3 py-2 text-gray-900 rounded-lg"
+                className="w-full px-3 py-2 text-gray-900 rounded-xl"
                 type="text"
                 id="name"
                 value={name}
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                 Email
               </label>
               <input
-                className="w-full px-3 py-2 text-gray-900 rounded-lg"
+                className="w-full px-3 py-2 text-gray-900 rounded-xl"
                 type="email"
                 id="email"
                 value={email}
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
                 Message
               </label>
               <textarea
-                className="w-full px-3 py-2 text-gray-900 rounded-lg"
+                className="w-full px-3 py-2 text-gray-900 rounded-xl"
                 id="message"
                 rows={4}
                 value={message}
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-purple-900 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg"
+              className="w-1/2  bg-purple-900 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-2xl"
             >
               Send Message
             </button>
